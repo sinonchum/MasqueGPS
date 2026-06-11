@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasqueGPS - Terms of Use</title>
+    <style>
+        :root {
+            --bg: #0A0E1A;
+            --surface: #111827;
+            --border: #1F2937;
+            --text: #E5E7EB;
+            --text-secondary: #9CA3AF;
+            --primary: #00D2BE;
+            --primary-dim: rgba(0,210,190,0.15);
+            --accent: #E91E8C;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 48px 0 40px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), #00B4D8, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        /* Language Switcher */
+        .lang-bar {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .lang-btn {
+            padding: 8px 18px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface);
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+        .lang-btn.active {
+            background: var(--primary-dim);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        /* Content */
+        .content { display: none; }
+        .content.active { display: block; }
+        h2 {
+            color: var(--primary);
+            font-size: 22px;
+            font-weight: 700;
+            margin: 36px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        h3 {
+            color: var(--text);
+            font-size: 17px;
+            font-weight: 600;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin-bottom: 14px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        ul, ol {
+            margin: 0 0 14px 24px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        li { margin-bottom: 6px; }
+        .highlight {
+            background: rgba(233,30,140,0.1);
+            border-left: 3px solid var(--accent);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        .highlight p { color: var(--text); margin-bottom: 0; }
+        .info-box {
+            background: var(--primary-dim);
+            border-left: 3px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        .info-box p { color: var(--text); margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            margin-top: 48px;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+        .effective { color: var(--text-secondary); font-size: 14px; margin-bottom: 8px; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px 60px; }
+            .header { padding: 32px 0 28px; }
+            .logo { font-size: 28px; }
+            h2 { font-size: 19px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">MasqueGPS</div>
+        <div class="subtitle">Terms of Use / Conditions d'utilisation / Nutzungsbedingungen / 利用規約 / Términos de uso / 使用条款</div>
+    </div>
+
+    <div class="lang-bar">
+        <button class="lang-btn active" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" onclick="switchLang('zh')">中文</button>
+        <button class="lang-btn" onclick="switchLang('fr')">Français</button>
+        <button class="lang-btn" onclick="switchLang('es')">Español</button>
+        <button class="lang-btn" onclick="switchLang('de')">Deutsch</button>
+        <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="content active">
+        <p class="effective">Effective Date: June 11, 2026</p>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using MasqueGPS ("the Application"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the Application.</p>
+
+        <h2>2. Description of Service</h2>
+        <p>MasqueGPS is a professional mock location utility designed for authorized software development, quality assurance (QA) testing, and diagnostic workflows. It allows users to simulate GPS coordinates on Android devices for testing location-dependent applications.</p>
+
+        <h2>3. Authorized Use</h2>
+        <p>The Application is intended exclusively for:</p>
+        <ul>
+            <li>Professional software development and debugging</li>
+            <li>Quality Assurance (QA) testing</li>
+            <li>Authorized demonstrations and presentations</li>
+            <li>Testing on devices and applications you own or are explicitly authorized to test</li>
+        </ul>
+
+        <h2>4. Prohibited Uses</h2>
+        <div class="highlight">
+            <p><strong>You must NOT use MasqueGPS to:</strong></p>
+        </div>
+        <ul>
+            <li>Deceive, defraud, or mislead any person or entity</li>
+            <li>Violate the terms of service of any third-party application or platform</li>
+            <li>Circumvent anti-abuse, anti-fraud, or anti-cheating systems</li>
+            <li>Engage in any illegal activity or violate applicable laws</li>
+            <li>Interfere with emergency services or location-dependent safety systems</li>
+            <li>Spoof location for unauthorized access to geo-restricted content or services</li>
+        </ul>
+
+        <h2>5. User Responsibility</h2>
+        <p>By using MasqueGPS, you acknowledge and agree that:</p>
+        <ol>
+            <li>You are solely responsible for how you use this Application</li>
+            <li>You understand that mock location features may affect device behavior</li>
+            <li>You accept all risks associated with using mock location functionality</li>
+            <li>You will comply with all applicable laws and third-party terms of service</li>
+            <li>You will not hold the developer liable for any consequences of misuse</li>
+        </ol>
+
+        <h2>6. Device Compatibility</h2>
+        <p>MasqueGPS is designed for Android devices running Android 7.0 or higher. The Application works best with root access. A non-root mode (Shizuku) is available but has significant limitations. The developer does not guarantee compatibility with all devices. See the COMPATIBILITY.md file for detailed device support information.</p>
+
+        <h2>7. Samsung Knox Disclaimer</h2>
+        <p>For Samsung device users: MasqueGPS does NOT trip the Knox warranty bit and does NOT modify system partitions. However, the developer is NOT responsible for any Knox-related issues. Users should verify their Knox status before using MasqueGPS.</p>
+
+        <h2>8. Intellectual Property</h2>
+        <p>MasqueGPS and its original content, features, and functionality are owned by the developer and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
+
+        <h2>9. Privacy</h2>
+        <div class="info-box">
+            <p>MasqueGPS processes all data locally on your device. The Application does not collect, transmit, or store any personal data on external servers. Network connectivity is only used for loading map tiles (OpenStreetMap) and is not required for core functionality.</p>
+        </div>
+
+        <h2>10. Disclaimer of Warranties</h2>
+        <p>MasqueGPS is provided "AS IS" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. The developer does not warrant that the Application will be error-free or uninterrupted.</p>
+
+        <h2>11. Limitation of Liability</h2>
+        <p>In no event shall the developer be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of the Application.</p>
+
+        <h2>12. Refund Policy</h2>
+        <p>Refunds are considered on a case-by-case basis. Non-root users who experience limitations due to the nature of their device configuration are not eligible for refunds, as these limitations are clearly documented before purchase.</p>
+
+        <h2>13. Changes to Terms</h2>
+        <p>The developer reserves the right to modify these terms at any time. Changes will be posted on this page with an updated effective date. Continued use of the Application after changes constitutes acceptance of the new terms.</p>
+
+        <h2>14. Contact</h2>
+        <p>For questions about these Terms of Use, please contact us via <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>.</p>
+    </div>
+
+    <!-- 中文 -->
+    <div id="zh" class="content">
+        <p class="effective">生效日期：2026年6月11日</p>
+        <h2>1. 接受条款</h2>
+        <p>下载、安装或使用 MasqueGPS（"本应用"）即表示您同意受本使用条款的约束。如不同意本条款，请勿使用本应用。</p>
+
+        <h2>2. 服务描述</h2>
+        <p>MasqueGPS 是一款专业级模拟定位工具，专为授权的软件开发、质量保证（QA）测试和诊断工作流程设计。允许用户在 Android 设备上模拟 GPS 坐标，用于测试位置相关的应用程序。</p>
+
+        <h2>3. 授权用途</h2>
+        <p>本应用仅限用于：</p>
+        <ul>
+            <li>专业软件开发和调试</li>
+            <li>质量保证（QA）测试</li>
+            <li>授权的演示和展示</li>
+            <li>在您拥有或明确授权测试的设备和应用上进行测试</li>
+        </ul>
+
+        <h2>4. 禁止用途</h2>
+        <div class="highlight">
+            <p><strong>严禁将 MasqueGPS 用于以下用途：</strong></p>
+        </div>
+        <ul>
+            <li>欺骗、欺诈或误导任何个人或实体</li>
+            <li>违反任何第三方应用或平台的服务条款</li>
+            <li>规避反滥用、反欺诈或反作弊系统</li>
+            <li>从事任何违法活动或违反适用法律</li>
+            <li>干扰紧急服务或依赖位置信息的安全系统</li>
+            <li>为未经授权访问地理限制内容或服务而伪造位置</li>
+        </ul>
+
+        <h2>5. 用户责任</h2>
+        <p>使用 MasqueGPS 即表示您确认并同意：</p>
+        <ol>
+            <li>您对本应用的使用方式承担全部责任</li>
+            <li>您理解模拟定位功能可能影响设备行为</li>
+            <li>您接受使用模拟定位功能的所有风险</li>
+            <li>您将遵守所有适用法律和第三方服务条款</li>
+            <li>您不会因滥用后果而追究开发者的责任</li>
+        </ol>
+
+        <h2>6. 设备兼容性</h2>
+        <p>MasqueGPS 设计用于运行 Android 7.0 或更高版本的设备。本应用在 Root 设备上效果最佳。非 Root 模式（Shizuku）可用但存在显著限制。开发者不保证与所有设备兼容。详见 COMPATIBILITY.md 文件。</p>
+
+        <h2>7. 三星 Knox 免责声明</h2>
+        <p>三星设备用户注意：MasqueGPS 不会触发 Knox 保修熔断位，也不会修改系统分区。但开发者不对任何 Knox 相关问题负责。用户在使用前应确认其 Knox 状态。</p>
+
+        <h2>8. 知识产权</h2>
+        <p>MasqueGPS 及其原始内容、功能和特性归开发者所有，受国际版权、商标、专利、商业秘密和其他知识产权法律保护。</p>
+
+        <h2>9. 隐私</h2>
+        <div class="info-box">
+            <p>MasqueGPS 在您的设备上本地处理所有数据。本应用不收集、传输或在外部服务器上存储任何个人数据。网络连接仅用于加载地图瓦片（OpenStreetMap），核心功能无需联网。</p>
+        </div>
+
+        <h2>10. 免责声明</h2>
+        <p>MasqueGPS 按"现状"提供，不作任何明示或暗示的保证，包括但不限于对适销性、特定用途适用性和非侵权性的保证。开发者不保证本应用无错误或不中断。</p>
+
+        <h2>11. 责任限制</h2>
+        <p>在任何情况下，开发者均不对任何间接的、附带的、特殊的、后果性的或惩罚性的损害承担责任，包括但不限于利润损失、数据损失、使用损失、商誉损失或其他无形损失。</p>
+
+        <h2>12. 退款政策</h2>
+        <p>退款将逐案考虑。由于设备配置限制而体验不佳的非 Root 用户不符合退款条件，因为这些限制在购买前已有明确说明。</p>
+
+        <h2>13. 条款变更</h2>
+        <p>开发者保留随时修改本条款的权利。变更将发布在本页面并更新生效日期。变更后继续使用本应用即表示接受新条款。</p>
+
+        <h2>14. 联系方式</h2>
+        <p>如对本使用条款有疑问，请通过 <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a> 联系我们。</p>
+    </div>
+
+    <!-- Français -->
+    <div id="fr" class="content">
+        <p class="effective">Date d'entrée en vigueur : 11 juin 2026</p>
+        <h2>1. Acceptation des conditions</h2>
+        <p>En téléchargeant, installant ou utilisant MasqueGPS (« l'Application »), vous acceptez d'être lié par ces Conditions d'utilisation. Si vous n'acceptez pas ces conditions, n'utilisez pas l'Application.</p>
+
+        <h2>2. Description du service</h2>
+        <p>MasqueGPS est un utilitaire professionnel de simulation de localisation conçu pour le développement logiciel autorisé, les tests d'assurance qualité (AQ) et les flux de travail de diagnostic. Il permet aux utilisateurs de simuler des coordonnées GPS sur les appareils Android pour tester les applications dépendantes de la localisation.</p>
+
+        <h2>3. Utilisation autorisée</h2>
+        <p>L'Application est exclusivement destinée à :</p>
+        <ul>
+            <li>Le développement et le débogage logiciel professionnel</li>
+            <li>Les tests d'assurance qualité (AQ)</li>
+            <li>Les démonstrations et présentations autorisées</li>
+            <li>Les tests sur des appareils et applications que vous possédez ou êtes explicitement autorisé à tester</li>
+        </ul>
+
+        <h2>4. Utilisations interdites</h2>
+        <div class="highlight">
+            <p><strong>Vous ne devez PAS utiliser MasqueGPS pour :</strong></p>
+        </div>
+        <ul>
+            <li>Tromper, frauder ou induire en erreur toute personne ou entité</li>
+            <li>Violer les conditions d'utilisation de toute application ou plateforme tierce</li>
+            <li>Contourner les systèmes anti-abus, anti-fraude ou anti-triche</li>
+            <li>Vous engager dans toute activité illégale ou violer les lois applicables</li>
+            <li>Interférer avec les services d'urgence ou les systèmes de sécurité basés sur la localisation</li>
+        </ul>
+
+        <h2>5. Responsabilité de l'utilisateur</h2>
+        <p>En utilisant MasqueGPS, vous reconnaissez et acceptez que :</p>
+        <ol>
+            <li>Vous êtes seul responsable de l'utilisation que vous faites de cette Application</li>
+            <li>Vous comprenez que les fonctionnalités de simulation de localisation peuvent affecter le comportement de l'appareil</li>
+            <li>Vous acceptez tous les risques associés à l'utilisation des fonctionnalités de simulation de localisation</li>
+            <li>Vous respecterez toutes les lois applicables et les conditions d'utilisation des tiers</li>
+            <li>Vous ne tiendrez pas le développeur responsable des conséquences d'une utilisation abusive</li>
+        </ol>
+
+        <h2>6. Compatibilité des appareils</h2>
+        <p>MasqueGPS est conçu pour les appareils Android fonctionnant sous Android 7.0 ou supérieur. L'Application fonctionne mieux avec un accès root. Un mode non-root (Shizuku) est disponible mais présente des limitations significatives. Le développeur ne garantit pas la compatibilité avec tous les appareils.</p>
+
+        <h2>7. Clause de non-responsabilité Samsung Knox</h2>
+        <p>Pour les utilisateurs d'appareils Samsung : MasqueGPS ne déclenche PAS le bit de garantie Knox et ne modifie PAS les partitions système. Cependant, le développeur n'est PAS responsable des problèmes liés à Knox.</p>
+
+        <h2>8. Propriété intellectuelle</h2>
+        <p>MasqueGPS et son contenu original, ses fonctionnalités et ses caractéristiques sont la propriété du développeur et sont protégés par les lois internationales sur le droit d'auteur, les marques, les brevets, les secrets commerciaux et autres lois sur la propriété intellectuelle.</p>
+
+        <h2>9. Confidentialité</h2>
+        <div class="info-box">
+            <p>MasqueGPS traite toutes les données localement sur votre appareil. L'Application ne collecte, ne transmet ni ne stocke de données personnelles sur des serveurs externes. La connectivité réseau est uniquement utilisée pour charger les tuiles de carte (OpenStreetMap) et n'est pas requise pour les fonctionnalités principales.</p>
+        </div>
+
+        <h2>10. Exclusion de garanties</h2>
+        <p>MasqueGPS est fourni « TEL QUEL » sans garantie d'aucune sorte, expresse ou implicite, y compris mais sans s'y limiter, les garanties de qualité marchande, d'adéquation à un usage particulier et de non-contrefaçon.</p>
+
+        <h2>11. Limitation de responsabilité</h2>
+        <p>En aucun cas, le développeur ne sera responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, y compris, sans limitation, la perte de profits, de données, d'usage, de clientèle ou d'autres pertes immatérielles.</p>
+
+        <h2>12. Politique de remboursement</h2>
+        <p>Les remboursements sont examinés au cas par cas. Les utilisateurs non-root qui rencontrent des limitations ne sont pas éligibles aux remboursements, car ces limitations sont clairement documentées avant l'achat.</p>
+
+        <h2>13. Modifications des conditions</h2>
+        <p>Le développeur se réserve le droit de modifier ces conditions à tout moment. Les modifications seront publiées sur cette page avec une date d'entrée en vigueur mise à jour.</p>
+
+        <h2>14. Contact</h2>
+        <p>Pour toute question concernant ces Conditions d'utilisation, veuillez nous contacter via <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>.</p>
+    </div>
+
+    <!-- Español -->
+    <div id="es" class="content">
+        <p class="effective">Fecha de entrada en vigor: 11 de junio de 2026</p>
+        <h2>1. Aceptación de los términos</h2>
+        <p>Al descargar, instalar o usar MasqueGPS («la Aplicación»), usted acepta estar sujeto a estos Términos de uso. Si no acepta estos términos, no use la Aplicación.</p>
+
+        <h2>2. Descripción del servicio</h2>
+        <p>MasqueGPS es una utilidad profesional de simulación de ubicación diseñada para el desarrollo de software autorizado, pruebas de aseguramiento de calidad (QA) y flujos de trabajo de diagnóstico. Permite a los usuarios simular coordenadas GPS en dispositivos Android para probar aplicaciones dependientes de ubicación.</p>
+
+        <h2>3. Uso autorizado</h2>
+        <p>La Aplicación está destinada exclusivamente a:</p>
+        <ul>
+            <li>Desarrollo y depuración de software profesional</li>
+            <li>Pruebas de aseguramiento de calidad (QA)</li>
+            <li>Demostraciones y presentaciones autorizadas</li>
+            <li>Pruebas en dispositivos y aplicaciones que posee o está autorizado a probar</li>
+        </ul>
+
+        <h2>4. Usos prohibidos</h2>
+        <div class="highlight">
+            <p><strong>NO debe usar MasqueGPS para:</strong></p>
+        </div>
+        <ul>
+            <li>Engañar, defraudar o confundir a cualquier persona o entidad</li>
+            <li>Violar los términos de servicio de cualquier aplicación o plataforma de terceros</li>
+            <li>Evadir sistemas anti-abuso, anti-fraude o anti-trampas</li>
+            <li>Participar en actividades ilegales o violar leyes aplicables</li>
+            <li>Interferir con servicios de emergencia o sistemas de seguridad basados en ubicación</li>
+        </ul>
+
+        <h2>5. Responsabilidad del usuario</h2>
+        <p>Al usar MasqueGPS, usted reconoce y acepta que:</p>
+        <ol>
+            <li>Es el único responsable de cómo usa esta Aplicación</li>
+            <li>Comprende que las funciones de simulación de ubicación pueden afectar el comportamiento del dispositivo</li>
+            <li>Acepta todos los riesgos asociados con el uso de la función de simulación de ubicación</li>
+            <li>Cumplirá con todas las leyes aplicables y los términos de servicio de terceros</li>
+            <li>No responsabilizará al desarrollador por las consecuencias del mal uso</li>
+        </ol>
+
+        <h2>6. Compatibilidad de dispositivos</h2>
+        <p>MasqueGPS está diseñado para dispositivos Android con Android 7.0 o superior. La Aplicación funciona mejor con acceso root. Hay un modo sin root (Shizuku) disponible pero con limitaciones significativas.</p>
+
+        <h2>7. Descargo de responsabilidad Samsung Knox</h2>
+        <p>Para usuarios de dispositivos Samsung: MasqueGPS NO activa el bit de garantía Knox y NO modifica las particiones del sistema. Sin embargo, el desarrollador NO es responsable de problemas relacionados con Knox.</p>
+
+        <h2>8. Propiedad intelectual</h2>
+        <p>MasqueGPS y su contenido original, características y funcionalidades son propiedad del desarrollador y están protegidos por las leyes internacionales de derechos de autor, marcas, patentes, secretos comerciales y otras leyes de propiedad intelectual.</p>
+
+        <h2>9. Privacidad</h2>
+        <div class="info-box">
+            <p>MasqueGPS procesa todos los datos localmente en su dispositivo. La Aplicación no recopila, transmite ni almacena datos personales en servidores externos. La conectividad de red solo se usa para cargar teselas de mapa (OpenStreetMap) y no se requiere para la funcionalidad principal.</p>
+        </div>
+
+        <h2>10. Exclusión de garantías</h2>
+        <p>MasqueGPS se proporciona «TAL CUAL» sin garantía de ningún tipo, expresa o implícita, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un propósito particular y no infracción.</p>
+
+        <h2>11. Limitación de responsabilidad</h2>
+        <p>En ningún caso el desarrollador será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos, incluidos, entre otros, la pérdida de beneficios, datos, uso, fondo de comercio u otras pérdidas intangibles.</p>
+
+        <h2>12. Política de reembolso</h2>
+        <p>Los reembolsos se consideran caso por caso. Los usuarios sin root que experimentan limitaciones no son elegibles para reembolsos, ya que estas limitaciones están claramente documentadas antes de la compra.</p>
+
+        <h2>13. Cambios en los términos</h2>
+        <p>El desarrollador se reserva el derecho de modificar estos términos en cualquier momento. Los cambios se publicarán en esta página con una fecha de entrada en vigor actualizada.</p>
+
+        <h2>14. Contacto</h2>
+        <p>Para preguntas sobre estos Términos de uso, contáctenos a través de <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>.</p>
+    </div>
+
+    <!-- Deutsch -->
+    <div id="de" class="content">
+        <p class="effective">Gültigkeitsdatum: 11. Juni 2026</p>
+        <h2>1. Annahme der Bedingungen</h2>
+        <p>Durch das Herunterladen, Installieren oder Verwenden von MasqueGPS („die Anwendung") erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, verwenden Sie die Anwendung nicht.</p>
+
+        <h2>2. Beschreibung des Dienstes</h2>
+        <p>MasqueGPS ist ein professionelles Werkzeug zur Standortsimulation, das für autorisierte Softwareentwicklung, Qualitätssicherungs-Tests (QA) und Diagnose-Workflows entwickelt wurde. Es ermöglicht Benutzern, GPS-Koordinaten auf Android-Geräten zu simulieren, um standortabhängige Anwendungen zu testen.</p>
+
+        <h2>3. Autorisierte Verwendung</h2>
+        <p>Die Anwendung ist ausschließlich bestimmt für:</p>
+        <ul>
+            <li>Professionelle Softwareentwicklung und Debugging</li>
+            <li>Qualitätssicherungs-Tests (QA)</li>
+            <li>Autorisierte Demonstrationen und Präsentationen</li>
+            <li>Tests auf Geräten und Anwendungen, die Sie besitzten oder ausdrücklich zum Testen autorisiert sind</li>
+        </ul>
+
+        <h2>4. Verbotene Verwendungen</h2>
+        <div class="highlight">
+            <p><strong>Sie dürfen MasqueGPS NICHT verwenden für:</strong></p>
+        </div>
+        <ul>
+            <li>Täuschung, Betrug oder Irreführung von Personen oder Einheiten</li>
+            <li>Verletzung der Nutzungsbedingungen von Drittanbieter-Anwendungen oder -Plattformen</li>
+            <li>Umgehung von Anti-Missbrauch-, Anti-Betrug- oder Anti-Cheat-Systemen</li>
+            <li>Illegale Aktivitäten oder Verstöße gegen geltende Gesetze</li>
+            <li>Störung von Notdiensten oder standortbasierten Sicherheitssystemen</li>
+        </ul>
+
+        <h2>5. Verantwortung des Nutzers</h2>
+        <p>Durch die Verwendung von MasqueGPS erkennen Sie an und stimmen zu, dass:</p>
+        <ol>
+            <li>Sie allein verantwortlich für die Verwendung dieser Anwendung sind</li>
+            <li>Sie verstehen, dass Standortfunktionen das Geräteverhalten beeinflussen können</li>
+            <li>Sie alle mit der Verwendung der Standortfunktion verbundenen Risiken akzeptieren</li>
+            <li>Sie alle geltenden Gesetze und Nutzungsbedingungen von Dritten einhalten</li>
+            <li>Sie den Entwickler nicht für Folgen des Missbrauchs haftbar machen</li>
+        </ol>
+
+        <h2>6. Gerätekompatibilität</h2>
+        <p>MasqueGPS ist für Android-Geräte mit Android 7.0 oder höher entwickelt. Die Anwendung funktioniert am besten mit Root-Zugang. Ein Nicht-Root-Modus (Shizuku) ist verfügbar, hat aber erhebliche Einschränkungen.</p>
+
+        <h2>7. Samsung Knox Haftungsausschluss</h2>
+        <p>Für Samsung-Gerätenutzer: MasqueGPS löst NICHT das Knox-Garantiebit aus und modifiziert NICHT die Systempartitionen. Der Entwickler ist jedoch NICHT verantwortlich für Knox-bezogene Probleme.</p>
+
+        <h2>8. Geistiges Eigentum</h2>
+        <p>MasqueGPS und seine ursprünglichen Inhalte, Funktionen und Eigenschaften sind Eigentum des Entwicklers und durch internationale Urheber-, Marken-, Patent-, Geschäftsgeheimnis- und andere Gesetze zum Schutz des geistigen Eigentums geschützt.</p>
+
+        <h2>9. Datenschutz</h2>
+        <div class="info-box">
+            <p>MasqueGPS verarbeitet alle Daten lokal auf Ihrem Gerät. Die Anwendung erhebt, übermittelt oder speichert keine persönlichen Daten auf externen Servern. Die Netzwerkverbindung wird nur zum Laden von Kartenkacheln (OpenStreetMap) verwendet und ist für die Kernfunktionalität nicht erforderlich.</p>
+        </div>
+
+        <h2>10. Gewährleistungsausschluss</h2>
+        <p>MasqueGPS wird „WIE BESEHEN" ohne Gewährleistung jeglicher Art bereitgestellt, einschließlich, aber nicht beschränkt auf die Gewährleistung der Marktgängigkeit, der Eignung für einen bestimmten Zweck und der Nichtverletzung.</p>
+
+        <h2>11. Haftungsbeschränkung</h2>
+        <p>Der Entwickler haftet in keinem Fall für indirekte, zufällige, besondere, Folgeschäden oder Strafschäden, einschließlich, ohne Einschränkung, entgangenen Gewinn, Datenverlust, Nutzungsausfall, Goodwill oder andere immaterielle Verluste.</p>
+
+        <h2>12. Rückerstattungsrichtlinie</h2>
+        <p>Rückerstattungen werden von Fall zu Fall geprüft. Nicht-Root-Nutzer, die Einschränkungen erfahren, sind nicht für Rückerstattungen berechtigt, da diese Einschränkungen vor dem Kauf klar dokumentiert sind.</p>
+
+        <h2>13. Änderungen der Bedingungen</h2>
+        <p>Der Entwickler behält sich das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite mit aktualisiertem Gültigkeitsdatum veröffentlicht.</p>
+
+        <h2>14. Kontakt</h2>
+        <p>Für Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte über <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>.</p>
+    </div>
+
+    <!-- 日本語 -->
+    <div id="ja" class="content">
+        <p class="effective">施行日：2026年6月11日</p>
+        <h2>1. 利用規約の承諾</h2>
+        <p>MasqueGPS（以下「本アプリ」）をダウンロード、インストール、または使用することにより、本利用規約に拘束されることに同意したものとみなします。本規約に同意されない場合は、本アプリを使用しないでください。</p>
+
+        <h2>2. サービスの説明</h2>
+        <p>MasqueGPSは、承認されたソフトウェア開発、品質保証（QA）テスト、および診断ワークフローのために設計されたプロフェッショナル向け位置情報シミュレーションユーティリティです。AndroidデバイスでGPS座標をシミュレートし、位置情報に依存するアプリケーションのテストを可能にします。</p>
+
+        <h2>3. 許可される使用</h2>
+        <p>本アプリは以下の用途に限定されます：</p>
+        <ul>
+            <li>プロフェッショナルなソフトウェア開発とデバッグ</li>
+            <li>品質保証（QA）テスト</li>
+            <li>承認されたデモンストレーションとプレゼンテーション</li>
+            <li>所有または明示的にテストを許可されたデバイスとアプリケーションでのテスト</li>
+        </ul>
+
+        <h2>4. 禁止される使用</h2>
+        <div class="highlight">
+            <p><strong>MasqueGPSを以下の目的で使用してはなりません：</strong></p>
+        </div>
+        <ul>
+            <li>個人または団体を欺く、詐欺的行為、または誤解させる行為</li>
+            <li>サードパーティアプリケーションまたはプラットフォームの利用規約に違反する行為</li>
+            <li>アンチ滥用、アンチフロード、またはアンチチートシステムを回避する行為</li>
+            <li>違法活動または適用法令に違反する行為</li>
+            <li>緊急サービスまたは位置情報に依存する安全システムを妨害する行為</li>
+        </ul>
+
+        <h2>5. ユーザーの責任</h2>
+        <p>MasqueGPSを使用することにより、以下を承認し同意します：</p>
+        <ol>
+            <li>本アプリの使用方法について全責任を負う</li>
+            <li>位置情報シミュレーション機能がデバイスの動作に影響する可能性があることを理解する</li>
+            <li>位置情報シミュレーション機能の使用に関連するすべてのリスクを受け入れる</li>
+            <li>すべての適用法令およびサードパーティの利用規約を遵守する</li>
+            <li>誤用の結果について開発者を責任追及しない</li>
+        </ol>
+
+        <h2>6. デバイス互換性</h2>
+        <p>MasqueGPSはAndroid 7.0以降のAndroidデバイス向けに設計されています。本アプリはRootアクセスで最適に動作します。非Rootモード（Shizuku）も利用可能ですが、重大な制限があります。</p>
+
+        <h2>7. Samsung Knox免責事項</h2>
+        <p>Samsungデバイスユーザー向け：MasqueGPSはKnox保証ビットをトリガーせず、システムパーティションを変更しません。ただし、開発者はKnox関連の問題について一切の責任を負いません。</p>
+
+        <h2>8. 知的財産</h2>
+        <p>MasqueGPSとそのオリジナルコンテンツ、機能、特性は開発者が所有し、国際的な著作権、商標、特許、営業秘密、その他の知的財産法によって保護されています。</p>
+
+        <h2>9. プライバシー</h2>
+        <div class="info-box">
+            <p>MasqueGPSはすべてのデータをデバイス上でローカルに処理します。本アプリは外部サーバーに個人データを収集、送信、または保存しません。ネットワーク接続はマップタイル（OpenStreetMap）の読み込みにのみ使用され、コア機能には不要です。</p>
+        </div>
+
+        <h2>10. 保証の否認</h2>
+        <p>MasqueGPSは「現状有姿」で提供され、商品性、特定目的への適合性、非侵害性を含むがこれに限定されない、いかなる種類の明示または黙示の保証もありません。</p>
+
+        <h2>11. 責任の制限</h2>
+        <p>開発者は、間接的、偶発的、特別、結果的、または懲罰的損害（利益損失、データ損失、使用損失、のれん、その他の無形損失を含むがこれに限定されない）について一切の責任を負いません。</p>
+
+        <h2>12. 返金ポリシー</h2>
+        <p>返金は個別に検討されます。デバイス構成による制限を経験した非Rootユーザーは、購入前にこれらの制限が明確に文書化されているため、返金の対象外です。</p>
+
+        <h2>13. 規約の変更</h2>
+        <p>開発者は、いつでも本規約を変更する権利を留保します。変更は更新された施行日とともに本ページに公開されます。</p>
+
+        <h2>14. お問い合わせ</h2>
+        <p>本利用規約に関するご質問は、<a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>よりお問い合わせください。</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 MasqueGPS. All rights reserved.</p>
+        <p><a href="https://github.com/sinonchum/MasqueGPS" style="color: var(--primary);">GitHub</a></p>
+    </div>
+</div>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    event.target.classList.add('active');
+    document.documentElement.lang = lang;
+}
+</script>
+</body>
+</html>
