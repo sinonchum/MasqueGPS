@@ -5,131 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MasqueGPS - Terms of Use</title>
     <style>
-        :root {
-            --bg: #0A0E1A;
-            --surface: #111827;
-            --border: #1F2937;
-            --text: #E5E7EB;
-            --text-secondary: #9CA3AF;
-            --primary: #00D2BE;
-            --primary-dim: rgba(0,210,190,0.15);
-            --accent: #E91E8C;
-        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #FFFFFF;
+            color: #1F2937;
             line-height: 1.7;
-            min-height: 100vh;
         }
         .container {
             max-width: 860px;
             margin: 0 auto;
             padding: 40px 24px 80px;
         }
-        /* Header */
         .header {
             text-align: center;
-            padding: 48px 0 40px;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 40px;
+            padding: 40px 0 32px;
+            border-bottom: 1px solid #E5E7EB;
+            margin-bottom: 32px;
         }
         .logo {
-            font-size: 36px;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--primary), #00B4D8, var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 8px;
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
         }
         .subtitle {
-            color: var(--text-secondary);
-            font-size: 15px;
+            color: #6B7280;
+            font-size: 14px;
+            margin-top: 4px;
         }
-        /* Language Switcher */
         .lang-bar {
             display: flex;
             justify-content: center;
-            gap: 8px;
-            margin-bottom: 40px;
+            gap: 6px;
+            margin-bottom: 32px;
             flex-wrap: wrap;
         }
         .lang-btn {
-            padding: 8px 18px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            background: var(--surface);
-            color: var(--text-secondary);
+            padding: 6px 14px;
+            border: 1px solid #D1D5DB;
+            border-radius: 4px;
+            background: #FFFFFF;
+            color: #6B7280;
             cursor: pointer;
             font-size: 14px;
-            font-weight: 500;
-            transition: all 0.2s;
+            transition: all 0.15s;
         }
-        .lang-btn:hover { border-color: var(--primary); color: var(--text); }
+        .lang-btn:hover { border-color: #9CA3AF; color: #374151; }
         .lang-btn.active {
-            background: var(--primary-dim);
-            border-color: var(--primary);
-            color: var(--primary);
+            background: #F3F4F6;
+            border-color: #9CA3AF;
+            color: #111827;
+            font-weight: 500;
         }
-        /* Content */
         .content { display: none; }
         .content.active { display: block; }
         h2 {
-            color: var(--primary);
-            font-size: 22px;
-            font-weight: 700;
-            margin: 36px 0 16px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--border);
+            color: #111827;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #E5E7EB;
         }
         h3 {
-            color: var(--text);
-            font-size: 17px;
+            color: #111827;
+            font-size: 16px;
             font-weight: 600;
-            margin: 24px 0 10px;
+            margin: 20px 0 8px;
         }
         p {
-            margin-bottom: 14px;
-            color: var(--text-secondary);
+            margin-bottom: 12px;
+            color: #4B5563;
             font-size: 15px;
         }
         ul, ol {
-            margin: 0 0 14px 24px;
-            color: var(--text-secondary);
+            margin: 0 0 12px 24px;
+            color: #4B5563;
             font-size: 15px;
         }
-        li { margin-bottom: 6px; }
+        li { margin-bottom: 4px; }
         .highlight {
-            background: rgba(233,30,140,0.1);
-            border-left: 3px solid var(--accent);
-            padding: 14px 18px;
-            border-radius: 0 8px 8px 0;
-            margin: 16px 0;
+            background: #FEF2F2;
+            border-left: 3px solid #DC2626;
+            padding: 12px 16px;
+            border-radius: 0 4px 4px 0;
+            margin: 12px 0;
         }
-        .highlight p { color: var(--text); margin-bottom: 0; }
+        .highlight p { color: #991B1B; margin-bottom: 0; }
         .info-box {
-            background: var(--primary-dim);
-            border-left: 3px solid var(--primary);
-            padding: 14px 18px;
-            border-radius: 0 8px 8px 0;
-            margin: 16px 0;
+            background: #F0FDF4;
+            border-left: 3px solid #16A34A;
+            padding: 12px 16px;
+            border-radius: 0 4px 4px 0;
+            margin: 12px 0;
         }
-        .info-box p { color: var(--text); margin-bottom: 0; }
+        .info-box p { color: #166534; margin-bottom: 0; }
         .footer {
             text-align: center;
-            padding-top: 40px;
-            border-top: 1px solid var(--border);
-            margin-top: 48px;
-            color: var(--text-secondary);
+            padding-top: 32px;
+            border-top: 1px solid #E5E7EB;
+            margin-top: 40px;
+            color: #9CA3AF;
             font-size: 13px;
         }
-        .effective { color: var(--text-secondary); font-size: 14px; margin-bottom: 8px; }
+        a { color: #2563EB; }
+        a:hover { text-decoration: underline; }
+        .effective { color: #6B7280; font-size: 14px; margin-bottom: 4px; }
         @media (max-width: 600px) {
             .container { padding: 20px 16px 60px; }
-            .header { padding: 32px 0 28px; }
-            .logo { font-size: 28px; }
-            h2 { font-size: 19px; }
+            .header { padding: 24px 0 20px; }
+            .logo { font-size: 26px; }
+            h2 { font-size: 18px; }
         }
     </style>
 </head>
@@ -137,7 +123,7 @@
 <div class="container">
     <div class="header">
         <div class="logo">MasqueGPS</div>
-        <div class="subtitle">Terms of Use / Conditions d'utilisation / Nutzungsbedingungen / 利用規約 / Términos de uso / 使用条款</div>
+        <div class="subtitle">Terms of Use</div>
     </div>
 
     <div class="lang-bar">
@@ -191,7 +177,7 @@
         </ol>
 
         <h2>6. Device Compatibility</h2>
-        <p>MasqueGPS is designed for Android devices running Android 7.0 or higher. The Application works best with root access. A non-root mode (Shizuku) is available but has significant limitations. The developer does not guarantee compatibility with all devices. See the COMPATIBILITY.md file for detailed device support information.</p>
+        <p>MasqueGPS is designed for Android devices running Android 7.0 or higher. The Application works best with root access. A non-root mode (Shizuku) is available but has significant limitations. The developer does not guarantee compatibility with all devices.</p>
 
         <h2>7. Samsung Knox Disclaimer</h2>
         <p>For Samsung device users: MasqueGPS does NOT trip the Knox warranty bit and does NOT modify system partitions. However, the developer is NOT responsible for any Knox-related issues. Users should verify their Knox status before using MasqueGPS.</p>
@@ -217,7 +203,7 @@
         <p>The developer reserves the right to modify these terms at any time. Changes will be posted on this page with an updated effective date. Continued use of the Application after changes constitutes acceptance of the new terms.</p>
 
         <h2>14. Contact</h2>
-        <p>For questions about these Terms of Use, please contact us via <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>.</p>
+        <p>For questions about these Terms of Use, please contact us via <a href="https://github.com/sinonchum/MasqueGPS/issues">GitHub Issues</a>.</p>
     </div>
 
     <!-- 中文 -->
@@ -262,7 +248,7 @@
         </ol>
 
         <h2>6. 设备兼容性</h2>
-        <p>MasqueGPS 设计用于运行 Android 7.0 或更高版本的设备。本应用在 Root 设备上效果最佳。非 Root 模式（Shizuku）可用但存在显著限制。开发者不保证与所有设备兼容。详见 COMPATIBILITY.md 文件。</p>
+        <p>MasqueGPS 设计用于运行 Android 7.0 或更高版本的设备。本应用在 Root 设备上效果最佳。非 Root 模式（Shizuku）可用但存在显著限制。开发者不保证与所有设备兼容。</p>
 
         <h2>7. 三星 Knox 免责声明</h2>
         <p>三星设备用户注意：MasqueGPS 不会触发 Knox 保修熔断位，也不会修改系统分区。但开发者不对任何 Knox 相关问题负责。用户在使用前应确认其 Knox 状态。</p>
@@ -288,7 +274,7 @@
         <p>开发者保留随时修改本条款的权利。变更将发布在本页面并更新生效日期。变更后继续使用本应用即表示接受新条款。</p>
 
         <h2>14. 联系方式</h2>
-        <p>如对本使用条款有疑问，请通过 <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a> 联系我们。</p>
+        <p>如对本使用条款有疑问，请通过 <a href="https://github.com/sinonchum/MasqueGPS/issues">GitHub Issues</a> 联系我们。</p>
     </div>
 
     <!-- Français -->
@@ -332,7 +318,7 @@
         </ol>
 
         <h2>6. Compatibilité des appareils</h2>
-        <p>MasqueGPS est conçu pour les appareils Android fonctionnant sous Android 7.0 ou supérieur. L'Application fonctionne mieux avec un accès root. Un mode non-root (Shizuku) est disponible mais présente des limitations significatives. Le développeur ne garantit pas la compatibilité avec tous les appareils.</p>
+        <p>MasqueGPS est conçu pour les appareils Android fonctionnant sous Android 7.0 ou supérieur. L'Application fonctionne mieux avec un accès root. Un mode non-root (Shizuku) est disponible mais présente des limitations significatives.</p>
 
         <h2>7. Clause de non-responsabilité Samsung Knox</h2>
         <p>Pour les utilisateurs d'appareils Samsung : MasqueGPS ne déclenche PAS le bit de garantie Knox et ne modifie PAS les partitions système. Cependant, le développeur n'est PAS responsable des problèmes liés à Knox.</p>
@@ -358,7 +344,7 @@
         <p>Le développeur se réserve le droit de modifier ces conditions à tout moment. Les modifications seront publiées sur cette page avec une date d'entrée en vigueur mise à jour.</p>
 
         <h2>14. Contact</h2>
-        <p>Pour toute question concernant ces Conditions d'utilisation, veuillez nous contacter via <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>.</p>
+        <p>Pour toute question concernant ces Conditions d'utilisation, veuillez nous contacter via <a href="https://github.com/sinonchum/MasqueGPS/issues">GitHub Issues</a>.</p>
     </div>
 
     <!-- Español -->
@@ -428,7 +414,7 @@
         <p>El desarrollador se reserva el derecho de modificar estos términos en cualquier momento. Los cambios se publicarán en esta página con una fecha de entrada en vigor actualizada.</p>
 
         <h2>14. Contacto</h2>
-        <p>Para preguntas sobre estos Términos de uso, contáctenos a través de <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>.</p>
+        <p>Para preguntas sobre estos Términos de uso, contáctenos a través de <a href="https://github.com/sinonchum/MasqueGPS/issues">GitHub Issues</a>.</p>
     </div>
 
     <!-- Deutsch -->
@@ -446,7 +432,7 @@
             <li>Professionelle Softwareentwicklung und Debugging</li>
             <li>Qualitätssicherungs-Tests (QA)</li>
             <li>Autorisierte Demonstrationen und Präsentationen</li>
-            <li>Tests auf Geräten und Anwendungen, die Sie besitzten oder ausdrücklich zum Testen autorisiert sind</li>
+            <li>Tests auf Geräten und Anwendungen, die Sie besitzen oder ausdrücklich zum Testen autorisiert sind</li>
         </ul>
 
         <h2>4. Verbotene Verwendungen</h2>
@@ -498,7 +484,7 @@
         <p>Der Entwickler behält sich das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite mit aktualisiertem Gültigkeitsdatum veröffentlicht.</p>
 
         <h2>14. Kontakt</h2>
-        <p>Für Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte über <a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>.</p>
+        <p>Für Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns bitte über <a href="https://github.com/sinonchum/MasqueGPS/issues">GitHub Issues</a>.</p>
     </div>
 
     <!-- 日本語 -->
@@ -568,12 +554,12 @@
         <p>開発者は、いつでも本規約を変更する権利を留保します。変更は更新された施行日とともに本ページに公開されます。</p>
 
         <h2>14. お問い合わせ</h2>
-        <p>本利用規約に関するご質問は、<a href="https://github.com/sinonchum/MasqueGPS/issues" style="color: var(--primary);">GitHub Issues</a>よりお問い合わせください。</p>
+        <p>本利用規約に関するご質問は、<a href="https://github.com/sinonchum/MasqueGPS/issues">GitHub Issues</a>よりお問い合わせください。</p>
     </div>
 
     <div class="footer">
         <p>© 2026 MasqueGPS. All rights reserved.</p>
-        <p><a href="https://github.com/sinonchum/MasqueGPS" style="color: var(--primary);">GitHub</a></p>
+        <p><a href="https://github.com/sinonchum/MasqueGPS">GitHub</a></p>
     </div>
 </div>
 
