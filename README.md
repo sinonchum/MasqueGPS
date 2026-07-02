@@ -54,6 +54,7 @@
 - **External Servers**: None — no connection to developer servers
 - **Data Collection**: None — no analytics, no tracking, no telemetry
 - **Network Usage**: Map tiles only — manual coordinate entry works fully offline
+- **Privacy Policy**: [privacy.html](privacy.html)
 
 ### Requirements
 
@@ -75,7 +76,7 @@ See [COMPATIBILITY.md](COMPATIBILITY.md) for detailed device compatibility.
 
 ### Legal
 
-See [ABOUT.md](ABOUT.md) for full terms of use, disclaimer, and refund policy.
+See [ABOUT.md](ABOUT.md) for full terms of use, disclaimer, and refund policy. See [Privacy Policy](privacy.html).
 
 ### Download
 
@@ -129,6 +130,7 @@ Available on Google Play Store.
 - **外部服务器**: 无 — 不连接开发者服务器
 - **数据收集**: 无 — 无分析、无追踪、无遥测
 - **网络用途**: 仅加载地图瓦片 — 手动输入经纬度可完全离线使用
+- **隐私政策**: [privacy.html](privacy.html)
 
 ### 使用要求
 
@@ -150,7 +152,7 @@ Available on Google Play Store.
 
 ### 法律条款
 
-详见 [ABOUT.md](ABOUT.md) 包含完整使用条款、免责声明和退款政策。
+详见 [ABOUT.md](ABOUT.md) 包含完整使用条款、免责声明和退款政策。[隐私政策](privacy.html)。
 
 ### 下载
 

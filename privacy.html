@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasqueGPS - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #FFFFFF;
+            color: #1F2937;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 0 32px;
+            border-bottom: 1px solid #E5E7EB;
+            margin-bottom: 32px;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            color: #111827;
+        }
+        .subtitle {
+            color: #6B7280;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        .lang-bar {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        .lang-btn {
+            padding: 6px 14px;
+            border: 1px solid #D1D5DB;
+            border-radius: 4px;
+            background: #FFFFFF;
+            color: #6B7280;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.15s;
+        }
+        .lang-btn:hover { border-color: #9CA3AF; color: #374151; }
+        .lang-btn.active {
+            background: #F3F4F6;
+            border-color: #9CA3AF;
+            color: #111827;
+            font-weight: 500;
+        }
+        .content { display: none; }
+        .content.active { display: block; }
+        h2 {
+            color: #111827;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        h3 {
+            color: #111827;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 20px 0 8px;
+        }
+        p {
+            margin-bottom: 12px;
+            color: #4B5563;
+            font-size: 15px;
+        }
+        ul, ol {
+            margin: 0 0 12px 24px;
+            color: #4B5563;
+            font-size: 15px;
+        }
+        li { margin-bottom: 4px; }
+        .info-box {
+            background: #F0FDF4;
+            border-left: 3px solid #16A34A;
+            padding: 12px 16px;
+            border-radius: 0 4px 4px 0;
+            margin: 12px 0;
+        }
+        .info-box p { color: #166534; margin-bottom: 0; }
+        .footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #E5E7EB;
+            margin-top: 40px;
+            color: #9CA3AF;
+            font-size: 13px;
+        }
+        a { color: #2563EB; }
+        a:hover { text-decoration: underline; }
+        .effective { color: #6B7280; font-size: 14px; margin-bottom: 4px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 15px;
+        }
+        th, td {
+            border: 1px solid #E5E7EB;
+            padding: 10px 14px;
+            text-align: left;
+        }
+        th {
+            background: #F9FAFB;
+            font-weight: 600;
+            color: #111827;
+        }
+        td { color: #4B5563; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px 60px; }
+            .header { padding: 24px 0 20px; }
+            .logo { font-size: 26px; }
+            h2 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">MasqueGPS</div>
+        <div class="subtitle">Privacy Policy</div>
+    </div>
+
+    <div class="lang-bar">
+        <button class="lang-btn active" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" onclick="switchLang('zh')">中文</button>
+        <button class="lang-btn" onclick="switchLang('fr')">Français</button>
+        <button class="lang-btn" onclick="switchLang('es')">Español</button>
+        <button class="lang-btn" onclick="switchLang('de')">Deutsch</button>
+        <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="content active">
+        <h1 style="text-align:center; font-size:24px; margin-bottom:8px;">Privacy Policy</h1>
+        <p class="effective">Effective Date: June 11, 2026</p>
+        <p class="effective">Last Updated: July 2, 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy describes how MasqueGPS ("the Application," "we," "us," or "our") handles information when you use our Android application. We are committed to protecting your privacy. This policy explains what data the Application accesses, how it is used, and your rights regarding that data.</p>
+
+        <h2>2. Data Collection Summary</h2>
+        <div class="info-box">
+            <p><strong>MasqueGPS does not collect, transmit, or store any personal data on external servers.</strong> All data processing occurs entirely on your device.</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Collected?</th>
+                <th>Shared?</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>Personal identification</td>
+                <td>No</td>
+                <td>No</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Location data</td>
+                <td>Processed locally only</td>
+                <td>No</td>
+                <td>Mock location simulation (on-device)</td>
+            </tr>
+            <tr>
+                <td>Usage analytics</td>
+                <td>No</td>
+                <td>No</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Crash reports</td>
+                <td>No</td>
+                <td>No</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Device information</td>
+                <td>No</td>
+                <td>No</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Account information</td>
+                <td>No</td>
+                <td>No</td>
+                <td>N/A — no account required</td>
+            </tr>
+        </table>
+
+        <h2>3. Data Storage</h2>
+        <p>All data generated by MasqueGPS is stored exclusively on your device's local storage. This includes:</p>
+        <ul>
+            <li><strong>Saved locations and favorites:</strong> Stored in the app's private directory on your device</li>
+            <li><strong>Location history:</strong> Stored locally and accessible only within the app</li>
+            <li><strong>App settings and preferences:</strong> Stored in Android's SharedPreferences</li>
+        </ul>
+        <p>This data is never transmitted off your device by the Application. If you uninstall the app, all locally stored data is permanently deleted.</p>
+
+        <h2>4. Network Usage</h2>
+        <p>MasqueGPS requests the <code>INTERNET</code> permission for a single purpose:</p>
+        <ul>
+            <li><strong>Map tile loading:</strong> The interactive map feature loads map tiles from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> servers. This is the only network activity performed by the Application.</li>
+        </ul>
+        <p>Map tile requests may include your IP address and approximate location as part of standard HTTP communication with OpenStreetMap servers. MasqueGPS does not control OpenStreetMap's data practices. Please refer to the <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OpenStreetMap Foundation Privacy Policy</a> for details.</p>
+        <p><strong>Core functionality works fully offline.</strong> Manual coordinate entry, location simulation, and all other features operate without an internet connection.</p>
+
+        <h2>5. Permissions Used</h2>
+        <table>
+            <tr>
+                <th>Permission</th>
+                <th>Reason</th>
+            </tr>
+            <tr>
+                <td>ACCESS_FINE_LOCATION</td>
+                <td>Required by Android to provide mock location functionality</td>
+            </tr>
+            <tr>
+                <td>ACCESS_COARSE_LOCATION</td>
+                <td>Required for location services framework compatibility</td>
+            </tr>
+            <tr>
+                <td>ACCESS_MOCK_LOCATION</td>
+                <td>Required to register as a mock location provider</td>
+            </tr>
+            <tr>
+                <td>INTERNET</td>
+                <td>Map tile loading from OpenStreetMap only</td>
+            </tr>
+            <tr>
+                <td>FOREGROUND_SERVICE</td>
+                <td>Required to maintain mock location in the background</td>
+            </tr>
+            <tr>
+                <td>RECEIVE_BOOT_COMPLETED</td>
+                <td>Optional: allows resuming mock location after device restart (root mode)</td>
+            </tr>
+        </table>
+
+        <h2>6. Third-Party Services</h2>
+        <p>MasqueGPS does not integrate any third-party SDKs, analytics services, advertising networks, or crash reporting tools.</p>
+        <p>The only external service used is <strong>OpenStreetMap</strong> for map tile display, as described in Section 4.</p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>MasqueGPS is designed for professional developers and QA engineers. The Application is not directed at children under the age of 13 (or the applicable age of consent in your jurisdiction). We do not knowingly collect any data from children.</p>
+
+        <h2>8. Data Security</h2>
+        <p>Since all data is stored locally on your device and no data is transmitted to external servers (other than OpenStreetMap tile requests), the security of your data depends on the security of your device. We recommend:</p>
+        <ul>
+            <li>Keeping your device's operating system up to date</li>
+            <li>Using device-level encryption</li>
+            <li>Using a secure lock screen</li>
+        </ul>
+
+        <h2>9. Your Rights</h2>
+        <p>Since MasqueGPS does not collect or store personal data on external servers, there is no personal data for us to access, modify, or delete. All data resides on your device and is under your full control. You may delete all app data at any time by clearing the app's storage or uninstalling the Application.</p>
+
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically. Continued use of the Application after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>11. Contact</h2>
+        <p>If you have questions about this Privacy Policy, you may contact us at:</p>
+        <p><a href="mailto:masquegps@gmail.com">masquegps@gmail.com</a></p>
+    </div>
+
+    <!-- 中文 -->
+    <div id="zh" class="content">
+        <h1 style="text-align:center; font-size:24px; margin-bottom:8px;">隐私政策</h1>
+        <p class="effective">生效日期：2026年6月11日</p>
+        <p class="effective">最后更新：2026年7月2日</p>
+
+        <h2>1. 引言</h2>
+        <p>本隐私政策描述了MasqueGPS（"本应用"、"我们"）在您使用我们的Android应用程序时如何处理信息。我们致力于保护您的隐私。本政策说明了本应用访问的数据、数据的使用方式以及您对该数据的权利。</p>
+
+        <h2>2. 数据收集概要</h2>
+        <div class="info-box">
+            <p><strong>MasqueGPS不会在外部服务器上收集、传输或存储任何个人数据。</strong>所有数据处理完全在您的设备上进行。</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>数据类型</th>
+                <th>是否收集</th>
+                <th>是否共享</th>
+                <th>用途</th>
+            </tr>
+            <tr>
+                <td>个人身份信息</td>
+                <td>否</td>
+                <td>否</td>
+                <td>不适用</td>
+            </tr>
+            <tr>
+                <td>位置数据</td>
+                <td>仅本地处理</td>
+                <td>否</td>
+                <td>模拟定位（设备端）</td>
+            </tr>
+            <tr>
+                <td>使用分析</td>
+                <td>否</td>
+                <td>否</td>
+                <td>不适用</td>
+            </tr>
+            <tr>
+                <td>崩溃报告</td>
+                <td>否</td>
+                <td>否</td>
+                <td>不适用</td>
+            </tr>
+            <tr>
+                <td>设备信息</td>
+                <td>否</td>
+                <td>否</td>
+                <td>不适用</td>
+            </tr>
+            <tr>
+                <td>账户信息</td>
+                <td>否</td>
+                <td>否</td>
+                <td>不适用——无需账户</td>
+            </tr>
+        </table>
+
+        <h2>3. 数据存储</h2>
+        <p>MasqueGPS生成的所有数据仅存储在您设备的本地存储中，包括：</p>
+        <ul>
+            <li><strong>已保存的位置和收藏：</strong>存储在设备上应用的私有目录中</li>
+            <li><strong>位置历史：</strong>本地存储，仅在应用内可访问</li>
+            <li><strong>应用设置和偏好：</strong>存储在Android的SharedPreferences中</li>
+        </ul>
+        <p>这些数据绝不会被本应用传输到设备外部。卸载应用后，所有本地存储的数据将被永久删除。</p>
+
+        <h2>4. 网络使用</h2>
+        <p>MasqueGPS请求<code>INTERNET</code>权限仅用于以下目的：</p>
+        <ul>
+            <li><strong>地图瓦片加载：</strong>交互式地图功能从<a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>服务器加载地图瓦片。这是本应用唯一的网络活动。</li>
+        </ul>
+        <p>地图瓦片请求可能包含您的IP地址和大致位置，这是与OpenStreetMap服务器标准HTTP通信的一部分。MasqueGPS不控制OpenStreetMap的数据处理方式。详情请参阅<a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OpenStreetMap基金会隐私政策</a>。</p>
+        <p><strong>核心功能可完全离线使用。</strong>手动输入坐标、位置模拟及其他所有功能无需网络连接即可运行。</p>
+
+        <h2>5. 使用的权限</h2>
+        <table>
+            <tr>
+                <th>权限</th>
+                <th>原因</th>
+            </tr>
+            <tr>
+                <td>ACCESS_FINE_LOCATION</td>
+                <td>Android要求用于提供模拟定位功能</td>
+            </tr>
+            <tr>
+                <td>ACCESS_COARSE_LOCATION</td>
+                <td>位置服务框架兼容性所需</td>
+            </tr>
+            <tr>
+                <td>ACCESS_MOCK_LOCATION</td>
+                <td>注册为模拟位置提供者所需</td>
+            </tr>
+            <tr>
+                <td>INTERNET</td>
+                <td>仅用于从OpenStreetMap加载地图瓦片</td>
+            </tr>
+            <tr>
+                <td>FOREGROUND_SERVICE</td>
+                <td>后台维持模拟定位所需</td>
+            </tr>
+            <tr>
+                <td>RECEIVE_BOOT_COMPLETED</td>
+                <td>可选：设备重启后恢复模拟定位（Root模式）</td>
+            </tr>
+        </table>
+
+        <h2>6. 第三方服务</h2>
+        <p>MasqueGPS不集成任何第三方SDK、分析服务、广告网络或崩溃报告工具。</p>
+        <p>唯一使用的外部服务是用于地图瓦片显示的<strong>OpenStreetMap</strong>，如第4节所述。</p>
+
+        <h2>7. 儿童隐私</h2>
+        <p>MasqueGPS面向专业开发者和QA工程师。本应用不针对13岁以下（或您所在司法管辖区适用的同意年龄以下）的儿童。我们不会故意收集儿童的任何数据。</p>
+
+        <h2>8. 数据安全</h2>
+        <p>由于所有数据均存储在您的设备本地，且除OpenStreetMap瓦片请求外不向外部服务器传输数据，您的数据安全性取决于您设备的安全性。我们建议：</p>
+        <ul>
+            <li>保持设备操作系统为最新版本</li>
+            <li>启用设备级加密</li>
+            <li>使用安全的锁屏方式</li>
+        </ul>
+
+        <h2>9. 您的权利</h2>
+        <p>由于MasqueGPS不在外部服务器上收集或存储个人数据，我们无法访问、修改或删除您的个人数据。所有数据保存在您的设备上，完全由您控制。您可以随时通过清除应用存储或卸载应用来删除所有应用数据。</p>
+
+        <h2>10. 隐私政策的变更</h2>
+        <p>我们可能会不时更新本隐私政策。任何更改将在此页面上公布，并更新"最后更新"日期。我们建议您定期查阅本隐私政策。在更改后继续使用本应用即表示您接受更新后的政策。</p>
+
+        <h2>11. 联系方式</h2>
+        <p>如您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+        <p><a href="mailto:masquegps@gmail.com">masquegps@gmail.com</a></p>
+    </div>
+
+    <!-- Français -->
+    <div id="fr" class="content">
+        <h1 style="text-align:center; font-size:24px; margin-bottom:8px;">Politique de Confidentialité</h1>
+        <p class="effective">Date d'entrée en vigueur : 11 juin 2026</p>
+        <p class="effective">Dernière mise à jour : 2 juillet 2026</p>
+
+        <h2>1. Introduction</h2>
+        <p>La présente Politique de Confidentialité décrit comment MasqueGPS (« l'Application », « nous ») traite les informations lorsque vous utilisez notre application Android. Cette politique explique quelles données l'Application accède, comment elles sont utilisées et vos droits concernant ces données.</p>
+
+        <h2>2. Résumé de la collecte de données</h2>
+        <div class="info-box">
+            <p><strong>MasqueGPS ne collecte, ne transmet ni ne stocke aucune donnée personnelle sur des serveurs externes.</strong> Tout le traitement des données s'effectue entièrement sur votre appareil.</p>
+        </div>
+
+        <h2>3. Stockage des données</h2>
+        <p>Toutes les données générées par MasqueGPS sont stockées exclusivement dans le stockage local de votre appareil, notamment :</p>
+        <ul>
+            <li><strong>Positions enregistrées et favoris :</strong> stockés dans le répertoire privé de l'application</li>
+            <li><strong>Historique des positions :</strong> stocké localement, accessible uniquement dans l'application</li>
+            <li><strong>Paramètres et préférences :</strong> stockés dans les SharedPreferences d'Android</li>
+        </ul>
+        <p>Ces données ne sont jamais transmises hors de votre appareil par l'Application. La désinstallation de l'application supprime définitivement toutes les données stockées localement.</p>
+
+        <h2>4. Utilisation du réseau</h2>
+        <p>MasqueGPS demande la permission <code>INTERNET</code> pour un seul objectif :</p>
+        <ul>
+            <li><strong>Chargement des tuiles cartographiques :</strong> la carte interactive charge des tuiles depuis les serveurs <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>. C'est la seule activité réseau de l'Application.</li>
+        </ul>
+        <p><strong>Les fonctionnalités principales fonctionnent entièrement hors ligne.</strong></p>
+
+        <h2>5. Services tiers</h2>
+        <p>MasqueGPS n'intègre aucun SDK tiers, service d'analyse, réseau publicitaire ou outil de rapport de plantage. Le seul service externe utilisé est <strong>OpenStreetMap</strong>.</p>
+
+        <h2>6. Confidentialité des enfants</h2>
+        <p>MasqueGPS est destiné aux développeurs et ingénieurs QA professionnels. L'Application n'est pas destinée aux enfants de moins de 13 ans.</p>
+
+        <h2>7. Vos droits</h2>
+        <p>Étant donné que MasqueGPS ne collecte pas de données personnelles sur des serveurs externes, toutes les données résident sur votre appareil sous votre contrôle total.</p>
+
+        <h2>8. Contact</h2>
+        <p>Pour toute question concernant cette Politique de Confidentialité :</p>
+        <p><a href="mailto:masquegps@gmail.com">masquegps@gmail.com</a></p>
+    </div>
+
+    <!-- Español -->
+    <div id="es" class="content">
+        <h1 style="text-align:center; font-size:24px; margin-bottom:8px;">Política de Privacidad</h1>
+        <p class="effective">Fecha de entrada en vigor: 11 de junio de 2026</p>
+        <p class="effective">Última actualización: 2 de julio de 2026</p>
+
+        <h2>1. Introducción</h2>
+        <p>Esta Política de Privacidad describe cómo MasqueGPS ("la Aplicación", "nosotros") maneja la información cuando utiliza nuestra aplicación Android. Esta política explica qué datos accede la Aplicación, cómo se utilizan y sus derechos respecto a dichos datos.</p>
+
+        <h2>2. Resumen de recopilación de datos</h2>
+        <div class="info-box">
+            <p><strong>MasqueGPS no recopila, transmite ni almacena ningún dato personal en servidores externos.</strong> Todo el procesamiento de datos se realiza íntegramente en su dispositivo.</p>
+        </div>
+
+        <h2>3. Almacenamiento de datos</h2>
+        <p>Todos los datos generados por MasqueGPS se almacenan exclusivamente en el almacenamiento local de su dispositivo, incluyendo:</p>
+        <ul>
+            <li><strong>Ubicaciones guardadas y favoritos:</strong> almacenados en el directorio privado de la aplicación</li>
+            <li><strong>Historial de ubicaciones:</strong> almacenado localmente, accesible solo dentro de la aplicación</li>
+            <li><strong>Configuración y preferencias:</strong> almacenados en SharedPreferences de Android</li>
+        </ul>
+        <p>La desinstalación de la aplicación elimina permanentemente todos los datos almacenados localmente.</p>
+
+        <h2>4. Uso de red</h2>
+        <p>MasqueGPS solicita el permiso <code>INTERNET</code> para un único propósito:</p>
+        <ul>
+            <li><strong>Carga de teselas de mapa:</strong> la función de mapa interactivo carga teselas desde los servidores de <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>.</li>
+        </ul>
+        <p><strong>Las funciones principales funcionan completamente sin conexión.</strong></p>
+
+        <h2>5. Servicios de terceros</h2>
+        <p>MasqueGPS no integra ningún SDK de terceros, servicio de análisis, red publicitaria ni herramientas de informes de fallos.</p>
+
+        <h2>6. Privacidad de menores</h2>
+        <p>MasqueGPS está diseñado para desarrolladores e ingenieros de QA profesionales. La Aplicación no está dirigida a menores de 13 años.</p>
+
+        <h2>7. Sus derechos</h2>
+        <p>Dado que MasqueGPS no recopila ni almacena datos personales en servidores externos, todos los datos residen en su dispositivo bajo su control total.</p>
+
+        <h2>8. Contacto</h2>
+        <p>Si tiene preguntas sobre esta Política de Privacidad:</p>
+        <p><a href="mailto:masquegps@gmail.com">masquegps@gmail.com</a></p>
+    </div>
+
+    <!-- Deutsch -->
+    <div id="de" class="content">
+        <h1 style="text-align:center; font-size:24px; margin-bottom:8px;">Datenschutzrichtlinie</h1>
+        <p class="effective">Gültigkeitsdatum: 11. Juni 2026</p>
+        <p class="effective">Letzte Aktualisierung: 2. Juli 2026</p>
+
+        <h2>1. Einleitung</h2>
+        <p>Diese Datenschutzrichtlinie beschreibt, wie MasqueGPS („die Anwendung", „wir") mit Informationen umgeht, wenn Sie unsere Android-Anwendung verwenden. Diese Richtlinie erläutert, auf welche Daten die Anwendung zugreift, wie diese verwendet werden und welche Rechte Sie bezüglich dieser Daten haben.</p>
+
+        <h2>2. Zusammenfassung der Datenerhebung</h2>
+        <div class="info-box">
+            <p><strong>MasqueGPS erhebt, übermittelt oder speichert keine personenbezogenen Daten auf externen Servern.</strong> Alle Datenverarbeitung erfolgt vollständig auf Ihrem Gerät.</p>
+        </div>
+
+        <h2>3. Datenspeicherung</h2>
+        <p>Alle von MasqueGPS generierten Daten werden ausschließlich im lokalen Speicher Ihres Geräts gespeichert, einschließlich:</p>
+        <ul>
+            <li><strong>Gespeicherte Standorte und Favoriten:</strong> im privaten Verzeichnis der App gespeichert</li>
+            <li><strong>Standortverlauf:</strong> lokal gespeichert, nur innerhalb der App zugänglich</li>
+            <li><strong>App-Einstellungen und Präferenzen:</strong> in Androids SharedPreferences gespeichert</li>
+        </ul>
+        <p>Die Deinstallation der App löscht dauerhaft alle lokal gespeicherten Daten.</p>
+
+        <h2>4. Netzwerknutzung</h2>
+        <p>MasqueGPS beantragt die <code>INTERNET</code>-Berechtigung nur für einen Zweck:</p>
+        <ul>
+            <li><strong>Kartentiles laden:</strong> die interaktive Kartenfunktion lädt Kartentiles von <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>-Servern.</li>
+        </ul>
+        <p><strong>Kernfunktionen funktionieren vollständig offline.</strong></p>
+
+        <h2>5. Dienste von Drittanbietern</h2>
+        <p>MasqueGPS integriert keine Drittanbieter-SDKs, Analysedienste, Werbenetzwerke oder Absturzberichterstattungstools.</p>
+
+        <h2>6. Privatsphäre von Kindern</h2>
+        <p>MasqueGPS richtet sich an professionelle Entwickler und QA-Ingenieure. Die Anwendung ist nicht an Kinder unter 13 Jahren gerichtet.</p>
+
+        <h2>7. Ihre Rechte</h2>
+        <p>Da MasqueGPS keine personenbezogenen Daten auf externen Servern erhebt oder speichert, verbleiben alle Daten auf Ihrem Gerät unter Ihrer vollständigen Kontrolle.</p>
+
+        <h2>8. Kontakt</h2>
+        <p>Bei Fragen zu dieser Datenschutzrichtlinie:</p>
+        <p><a href="mailto:masquegps@gmail.com">masquegps@gmail.com</a></p>
+    </div>
+
+    <!-- 日本語 -->
+    <div id="ja" class="content">
+        <h1 style="text-align:center; font-size:24px; margin-bottom:8px;">プライバシーポリシー</h1>
+        <p class="effective">施行日：2026年6月11日</p>
+        <p class="effective">最終更新日：2026年7月2日</p>
+
+        <h2>1. はじめに</h2>
+        <p>本プライバシーポリシーは、MasqueGPS（「本アプリケーション」「当社」）がAndroidアプリケーションの使用時に情報をどのように処理するかを説明します。本ポリシーでは、本アプリケーションがアクセスするデータ、データの使用方法、およびそのデータに関するお客様の権利について説明します。</p>
+
+        <h2>2. データ収集の概要</h2>
+        <div class="info-box">
+            <p><strong>MasqueGPSは、外部サーバーに個人データを収集、送信、または保存しません。</strong>すべてのデータ処理はお客様のデバイス上で完全に行われます。</p>
+        </div>
+
+        <h2>3. データの保存</h2>
+        <p>MasqueGPSが生成するすべてのデータは、お客様のデバイスのローカルストレージにのみ保存されます：</p>
+        <ul>
+            <li><strong>保存された場所とお気に入り：</strong>アプリのプライベートディレクトリに保存</li>
+            <li><strong>位置履歴：</strong>ローカルに保存、アプリ内でのみアクセス可能</li>
+            <li><strong>アプリ設定と環境設定：</strong>AndroidのSharedPreferencesに保存</li>
+        </ul>
+        <p>アプリをアンインストールすると、ローカルに保存されたすべてのデータが完全に削除されます。</p>
+
+        <h2>4. ネットワークの使用</h2>
+        <p>MasqueGPSが<code>INTERNET</code>パーミッションを要求するのは以下の目的のみです：</p>
+        <ul>
+            <li><strong>マップタイルの読み込み：</strong>インタラクティブマップ機能は<a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>サーバーからマップタイルを読み込みます。</li>
+        </ul>
+        <p><strong>コア機能は完全にオフラインで動作します。</strong></p>
+
+        <h2>5. サードパーティサービス</h2>
+        <p>MasqueGPSは、サードパーティSDK、分析サービス、広告ネットワーク、クラッシュレポートツールを一切統合していません。</p>
+
+        <h2>6. こどものプライバシー</h2>
+        <p>MasqueGPSはプロの開発者とQAエンジニアを対象としています。本アプリケーションは13歳未満のこどもを対象としていません。</p>
+
+        <h2>7. お客様の権利</h2>
+        <p>MasqueGPSは外部サーバーに個人データを収集・保存しないため、すべてのデータはお客様のデバイスに残り、お客様が完全に管理します。</p>
+
+        <h2>8. お問い合わせ</h2>
+        <p>本プライバシーポリシーに関するご質問：</p>
+        <p><a href="mailto:masquegps@gmail.com">masquegps@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 MasqueGPS. All rights reserved.</p>
+        <p style="margin-top: 4px;"><a href="terms.html">Terms of Use</a></p>
+    </div>
+</div>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
